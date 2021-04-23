@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-storage.js"></script>
+	<script src="login.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Log-In |</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand navbar-dark img-jumbo">
+		<div class="container-fluid">
+			<h2 id="login-title">M.U. EVENTS</h2>
+			<ul class=" navbar-nav align-items-center">
+			</ul>
+		</div>
+	</nav>
+	<br><br>
+	<center>
+		<div class="container form" style="background-color: rgb(255, 255, 255); padding:5%; width:40%">
+			<div style="background-color:rgba(255,255,255,0.7);">
+				<div class="container-fluid">
+					<ul class="nav-tabs nav nav-justified">
+						<li class="nav-item"><a href="#log" class="nav-link active" data-toggle="tab">Login</a>
+						</li>
+						<li class="nav-item"><a href="#reg" class="nav-link" data-toggle="tab">Register</a></li>
+					</ul>
+				</div>
+			</div>
+			<br><br>
+			<div class="tab-content">
+			<div class="tab-pane active" id="log">
+			<input type="email" class="form-control" placeholder="Email.." style="border-bottom:solid 1px blue;"
+				id="email">
+			<input type="password" class="form-control" placeholder="Password.." style="border-bottom:solid 1px blue;"
+				id="password"><br><br>
+			<button class="btn btn-dark" onclick="signin()" id="login_btn"><span>Login</span></button>
+			</div>
+			<div class="tab-pane" id="reg">
+				<input type="text" class="form-control" placeholder="Name.." style="border-bottom:solid 1px blue;"
+				id="nameR">
+			<input type="email" class="form-control" placeholder="Email.." style="border-bottom:solid 1px blue;"
+				id="emailR">
+				<input type="password" class="form-control" placeholder="Password.." style="border-bottom:solid 1px blue;"
+				id="passwordR">
+				<input type="text" class="form-control" placeholder="Contact Number.." style="border-bottom:solid 1px blue;"
+				id="contactR"><br><br>
+			<button class="btn btn-dark" onclick="signup()" id="register_btn"><span>Register</span></button>
+			</div>
+			</div>
+		</div>
+	</center>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-storage.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>M.U. EVENTS</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark img-jumbo">
+		<div class="container-fluid">
+			<a href="Index.html" class="navbar-brand text-left " id="">
+				<h2>M.U. EVENTS</h2>
+			</a>
+
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navi">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navi">
+				<ul class=" navbar-nav align-items-center ml-auto" id="nav">
+					<li class="nav-item" id="SO">
+						<a class="nav-link"><button class="btn btn-danger "
+								onclick="signOut()"><span class="">Sign Out</span></button></a>
+					</li>
+					<li class="nav-item" id="LR">
+						<a href="login.html" class="nav-link"><button class="btn btn-danger "
+								onclick="LogReg()"><span class="">Login\Register</span></button></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div style="background-color:rgba(255,255,255);">
+		<div class="container-fluid">
+			<ul class="nav-tabs nav nav-justified">
+				<li class="nav-item "><a style="color: black;" href="#home" class="nav-link active" data-toggle="tab">Home</a></li>
+				<li class="nav-item "><a style="color: black;" href="#pro" class="nav-link" data-toggle="tab">Profile</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="tab-content container-fluid">
+		<div class="tab-pane active" id="home">
+			<div class=" " id="caro">
+				<div class="carousel slide" id="slider" data-ride="carousel">
+
+					<div class="carousel-inner">
+
+						<div class="container-fluid carousel-item active">
+							<img id="carim" class="img-fluid" src="sport.jpg">
+							<div class="carousel-caption">
+
+							</div>
+
+						</div>
+
+						<div class="container-fluid carousel-item">
+							<img id="carim" class="img-fluid" src="Music.jpg">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+
+						<div class="container-fluid carousel-item">
+							<img id="carim" class="img-fluid" src="Tech.jpg">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+
+						<div class="container-fluid carousel-item">
+							<img id="carim" class="img-fluid" src="Dance-c.jpg">
+							<div class="carousel-caption">
+
+							</div>
+						</div>
+
+
+					</div>
+
+					<ul class="carousel-indicators">
+						<li data-target="#slider" data-slide-to="0" class="active"></li>
+						<li data-target="#slider" data-slide-to="1" class=""></li>
+						<li data-target="#slider" data-slide-to="2" class=""></li>
+						<li data-target="#slider" data-slide-to="3" class=""></li>
+					</ul>
+
+					<a href="#slider" data-slide="prev" class="carousel-control-prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+
+					<a href="#slider" data-slide="next" class="carousel-control-next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+
+
+				</div>
+			</div>
+
+			<div class="">
+				<center>
+					<h1 id="HomeTitle" class="text-center">
+						C A T E G O R I E S
+					</h1>
+				</center>
+			</div>
+			<br><br>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="sh card col-sm-6 col-md-6 col-lg-6 col-xl-6 col-12" id="footballCard">
+						<img src="1.jpg" class="card-img" id="card-thumbnail">
+						<div class="card-body">
+							<h4 class="card-title text-center">SPORTS EVENTS</h4>
+							<p class="card-text"> Look for events related to sports</p>
+							<div class="card-footer">
+								<a href="Football.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+								<p class="text-info text-center">Click here to see events and upload your own events</p>
+							</div>
+						</div>
+					</div>
+					<div class="sh card col-sm-6 col-md-6 col-lg-6 col-xl-6 col-12" id="CricketCard">
+						<img src="2.jpg" class="card-img" id="card-thumbnail">
+						<div class="card-body">
+							<h4 class="card-title text-center">CULTURAL EVENTS</h4>
+							<p class="card-text"> Look for cultural events</p>
+							<div class="card-footer">
+								<a href="Cricket.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+								<p class="text-info text-center">Click here to see events and upload your own events</p>
+							</div>
+						</div>
+					</div>
+					<div class="sh card col-sm-6 col-md-6 col-lg-6 col-xl-6 col-12" id="MusicCard">
+						<img src="3.jpg" class="card-img" id="card-thumbnail">
+						<div class="card-body">
+							<h4 class="card-title text-center">TECHNICAL EVENTS</h4>
+							<p class="card-text"> Look for technical events</p>
+							<div class="card-footer">
+								<a href="Music.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+								<p class="text-info text-center">Click here to see events and upload your own events</p>
+							</div>
+						</div>
+					</div>
+					<div class="sh card col-sm-6 col-md-6 col-lg-6 col-xl-6 col-12" id="DanceCard">
+						<img src="4.jpg" class="card-img" id="card-thumbnail">
+						<div class="card-body">
+							<h4 class="card-title text-center">OTHER EVENTS</h4>
+							<p class="card-text">Look for other events</p>
+							<div class="card-footer">
+								<a href="Dance.html" class="btn btn-outline-primary d-block">EXPLORE</a>
+								<p class="text-info text-center">Click here to see events and upload your own events</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="tab-pane container-fluid con" style="background: white; border-radius:5%;" id="pro">
+			<center>
+			<div id="data">
+				<h3>Name of User :<h3 id="data_name"></h3></h3>
+				<h3>Email of User :<h3 id="data_email"></h3></h3>
+				<h3>Contact of User :<h3 id="data_contact"></h3></h3>
+				<h3>Account Verified :<h3 id="user_verified"></h3></h3>
+			</div>
+			</center>
+			<center>
+				<div id="container">
+					<div id="header">
+					  <div id="monthDisplay"></div>
+					  <div>
+						<button id="backButton" class="btn">Back</button>
+						<button id="nextButton" class="btn">Next</button>
+					  </div>
+					</div>
+					<center>
+					<div id="weekdays">
+					  <div>Sunday</div>
+					  <div>Monday</div>
+					  <div>Tuesday</div>
+					  <div>Wednesday</div>
+					  <div>Thursday</div>
+					  <div>Friday</div>
+					  <div>Saturday</div>
+					</div>
+					</center>
+					<div id="calendar"></div>
+				  </div>
+			  
+				  <div id="newEventModal">
+					<h2>New Event</h2>
+			  
+					<input id="eventTitleInput" placeholder="Event Title" />
+			  
+					<button id="saveButton">Save</button>
+					<button id="cancelButton">Cancel</button>
+				  </div>
+			  
+				  <div id="deleteEventModal">
+					<h2>Event</h2>
+			  
+					<p id="eventText"></p>
+			  
+					<button id="deleteButton">Delete</button>
+					<button id="closeButton">Close</button>
+				  </div>
+		</center>
+		<br><br>
+		<center>
+			<h1 id="HomeTitle" class="text-center">
+				WISHLIST
+			</h1>
+		</center>
+			<div style="background-color:rgba(255, 255, 255, 0.7);">
+				<div class="container-fluid">
+					<ul class="nav-tabs nav nav-justified">
+						<li class="nav-item "><a style="color: rgb(0, 0, 0);" href="#sport" class="nav-link active ta co" data-toggle="tab">Sports</a></li>
+						<li class="nav-item "><a style="color: rgb(0, 0, 0);" href="#cult" class="nav-link ta co" data-toggle="tab">Cultural</a></li>
+						<li class="nav-item "><a style="color: rgb(0, 0, 0);" href="#tech" class="nav-link ta co" data-toggle="tab">Technical</a></li>
+						<li class="nav-item "><a style="color: rgb(0, 0, 0);" href="#oth" class="nav-link ta co" data-toggle="tab">Other</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-content container-fluid">
+				<div class="tab-pane active" id="sport">
+					<center>
+					<div class="row mt-4" id="partiS">
+						
+					</div>
+					</center>
+				</div>
+				<div class="tab-pane" id="cult">
+					<center>
+					<div class="row mt-4" id="partiC">
+						
+					</div>
+					</center>
+				</div>
+				<div class="tab-pane" id="tech">
+					<center>
+					<div class="row mt-4" id="partiT">
+						
+					</div>
+					</center>
+				</div>
+				<div class="tab-pane" id="oth">
+					<center>
+					<div class="row mt-4 " id="partiO">	
+						
+					</div>
+					</center>
+				</div>
+			</div>
+			<br><br>
+		</div>
+		<br><br>
+	</div>
+	<script src="calendar.js"></script>
+	<script src="upload.js"></script>
+	<script src="uploadCult.js"></script>
+	<script src="uploadTech.js"></script>
+	<script src="uploadOth.js"></script>
+	<script src="login.js"></script>
+	
+</body>
+</html>

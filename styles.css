@@ -1,0 +1,293 @@
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("back.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.img-jumbo {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('circuit.gif');
+  background-size: cover;
+}
+
+h1{
+  color: white;
+  font-weight: 500;
+  font-size: 400%;
+}
+
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+}
+
+#search_texts{
+  color: white;
+}
+#Header{
+  color: white;
+  font-weight: 500;
+  font-size: 4.5vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+
+}
+#HomeTitle{
+  margin-top: 3vw;
+  color: black;
+  background-color:rgba(255,255,255,0.7);
+  font-family: Impact, fantasy;
+}
+#caro{
+  -moz-box-shadow:    7px 10px 11px 0px rgb(46, 45, 45);
+  -webkit-box-shadow: 7px 10px 11px 0px rgb(46, 45, 45);
+  box-shadow:         7px 10px 11px 0px rgb(46, 45, 45);
+  
+}
+.con{
+  -moz-box-shadow:    7px 10px 11px 0px rgb(46, 45, 45);
+  -webkit-box-shadow: 7px 10px 11px 0px rgb(46, 45, 45);
+  box-shadow:         7px 10px 11px 0px rgb(46, 45, 45);
+}
+
+h2{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 5vw;
+  outline: 3px;
+  outline-color: yellow;
+}
+h3{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 3vw;
+}
+#footy{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('sport.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#cricky{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Music.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#musicy{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('tech.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#dancy{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('Dance-c.jpg')no-repeat ; 
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: 100% auto;
+    position: relative;
+   min-height: 20vw;
+}
+#mute{
+  font-size: 0.8vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+#nptitle{
+  font-size: 4vw;
+  text-align: left;
+}
+#infolist{
+  margin-left: 1.5vw;
+  margin-top: 2vw;
+}
+#logtit{
+  margin-top: 20vw;
+}
+#lsbt{
+  margin-top: 2vw;
+}
+#bold{
+  font-family: Impact, fantasy;
+  font-size: 3vw;
+}
+#bold2{
+  font-family: Impact, fantasy;
+  font-size: 3vw;
+}
+#bold3{
+  font-family: Impact, fantasy;
+  font-size: 3vw;
+}
+#login-title{
+  color: white;
+  
+}
+#loui{
+  margin-top: 5vw;
+}
+
+.sh{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  top: 0;
+  transition: top 0.5s ease;
+  margin: auto;
+  -moz-box-shadow:    7px 10px 11px 0px rgb(46, 45, 45);
+  -webkit-box-shadow: 7px 10px 11px 0px rgb(46, 45, 45);
+  box-shadow:         7px 10px 11px 0px rgb(46, 45, 45);
+}
+.sh:hover{
+  top: -30px;
+}
+#footballCard{
+  max-width: 800px;
+  margin-bottom: 5%;
+}
+#footballCard img{
+  width: 100%;
+  padding-top: 3%;
+}
+#CricketCard{
+  max-width: 800px;
+  margin-bottom: 5%;
+}
+#CricketCard img{
+  width: 100%;
+  padding-top: 3%;
+}
+#MusicCard{
+  max-width: 800px;
+  margin-bottom: 5%;
+}
+#MusicCard img{
+  width: 100%;
+  padding-top: 3%;
+}
+#DanceCard{
+  max-width: 800px;
+  margin-bottom: 5%;
+}
+#DanceCard img{
+  width: 100%;
+  padding-top: 3%;
+}
+
+
+#header {
+  padding: 10px;
+  color: #d36c6c;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#header button {
+  background-color:#38aedd;
+  border: 1px solid black;
+}
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #000000;
+}
+#weekdays div {
+  width: 150px;
+  padding: px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: rgb(204, 228, 241);
+  margin: 5px;
+  box-shadow: 0px 0px 3px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color:#38aedd;
+  border: 2px solid black;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 500px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton, #closeButton {
+  background-color: #92a1d1;
+}
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
